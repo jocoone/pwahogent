@@ -1,0 +1,86 @@
+body {
+    background-color: #fafafa;
+}
+
+.navbar {
+    background-color: #78824C;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar-brand {
+    vertical-align: middle;
+}
+
+.notifications {
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+    width: 100vw;
+    padding: 10px;
+}
+
+main {
+    height: 100vh;
+    padding: 60px;
+}
+
+main form {
+    display: flex;
+    width: 80vw;
+}
+
+main form img {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+main.searched form {
+    margin-top: 20px !important;
+    margin-bottom: 20px;
+}
+
+main:not(.searched) form {
+    margin-top: 25% !important;
+}
+
+main form input {
+    flex-grow: 5;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+#results .result-item {
+    padding: 20px;
+    border: 2px solid #78824C;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#results .result-item:hover {
+    color: #fafafa;
+    background-color: #78824C;
+}
+
+#pwa-install {
+    color: #fafafa;
+    background-color: #78824C;
+    min-width: 100px;
+    text-align: center;
+    border: none;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 650px) {
+    main form img {
+        display: none;
+    }
+}
+
